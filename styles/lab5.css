@@ -1,0 +1,101 @@
+body {
+    background-color: rgb(5, 8, 18);
+    height: 500vh;
+}
+
+.heading {
+    font-size: large;
+    margin-bottom: 50px;
+}
+
+.box-model {
+    height: 250px;
+    width: 250px;
+    background-color: rgb(67, 67, 233);
+    margin: 10px;
+
+    text-align: center;
+
+    border: 3px solid red;
+    padding: 10px;
+}
+
+.relative {
+    position: relative;
+    left: 177px;
+    height: 350px;
+    width: 350px;
+    background-color: yellow;
+}
+
+.absolute {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    right: 17px;
+    bottom: 17px;
+}
+
+.fixed {
+    position: fixed;
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    bottom: 77px;
+    right: 77px;
+
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+.sticky {
+    position: sticky;
+    background-color: green;
+    border: 2px solid limegreen;
+    top: 0px;
+
+    margin: 40px;
+    padding: 17px;
+}
+
+.banner {
+    color: whitesmoke;
+    border: 3px solid gray;
+    padding: 17px 10px;
+    text-align: center;
+}
+
+.hidden {
+    margin: 100px;
+    height: 100px;
+    width: 110px;
+    background-color: wheat;
+    overflow: hidden;
+    border: 2px solid cyan;
+}
+
+.hidden:hover {
+    overflow: visible;
+    color: red;
+}
+
+.scroll {
+    height: 100px;
+    width: 110px;
+    background-color: wheat;
+    margin: 100px;
+
+    overflow: scroll;
+    resize: both;
+}
+
+.auto {
+    height: 100px;
+    width: 110px;
+    background-color: wheat;
+    margin: 100px;
+
+    overflow: auto;
+    resize: both;
+}

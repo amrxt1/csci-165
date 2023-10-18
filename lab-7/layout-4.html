@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lab-7</title>
+    <link rel="stylesheet" href="../styles/lab-7.css" />
+    <script>
+      console.log(`
+        WEBSITE: amrit-815257.infinityfreeapp.com  
+        `);
+    </script>
+  </head>
+  <body>
+    <header><h1>Columbia College</h1></header>
+    <nav1>
+      <ul>
+        <li><a href="../lab-7.html">Information</a></li>
+        <li><a href="layout-2.html">Hobby</a></li>
+        <li><a href="layout-3.html">Major</a></li>
+        <li><a href="layout-4.html">JavaScript</a></li>
+      </ul>
+    </nav1>
+    <nav>
+      <ul>
+        <li><a href="../lab-7.html">Information</a></li>
+        <li><a href="layout-2.html">Hobby</a></li>
+        <li><a href="layout-3.html">Major</a></li>
+        <li><a href="layout-4.html">JavaScript</a></li>
+      </ul>
+    </nav>
+    <article>
+      <h2 id="screen"></h2>
+      <script>
+        document.getElementById("screen").innerHTML = new Date();
+      </script>
+      <input
+        type="button"
+        value="Update DateTime"
+        onClick="
+      document.getElementById('screen').innerHTML = new Date();
+      alert('Updating Date..');
+      "
+      />
+    </article>
+    <footer>Web Page Design</footer>
+  </body>
+</html>

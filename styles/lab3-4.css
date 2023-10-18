@@ -1,0 +1,16 @@
+a:link {
+    color: purple;
+}
+
+a:visited {
+    color: cyan;
+}
+
+a:hover {
+    color: red;
+    background: linear-gradient(90deg, rgba(15, 4, 201, 1) 0%, rgba(71, 71, 214, 1) 40%, rgba(0, 212, 255, 1) 100%);
+}
+
+a:active {
+    background-color: purple;
+}
