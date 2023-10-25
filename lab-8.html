@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Lab 8</title>
+  </head>
+  <body>
+    <p id="dwarf"></p>
+    <script>
+      var week = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+      var dwarfs = new Array(
+        "Bashful",
+        "Doc",
+        "Dopey",
+        "Happy",
+        "Sleepy",
+        "Sneezy",
+        "Grumpy"
+      );
+      var dishJob = "";
+
+      for (i = 0; i < 7; i++) {
+        dishJob =
+          dishJob +
+          dwarfs[i] +
+          " & " +
+          dwarfs[i % 7] +
+          " do dishes on " +
+          week[i] +
+          "<br>";
+      }
+
+      document.getElementById("dwarf").innerHTML = dishJob;
+    </script>
+  </body>
+</html>
