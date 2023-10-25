@@ -38,5 +38,66 @@
 
       document.getElementById("dwarf").innerHTML = dishJob;
     </script>
+    <hr />
+
+    <table>
+      <tr>
+        <td>Enter Number 1</td>
+        <td>
+          <input
+            type="text"
+            id="num1"
+            onkeydown="this.style.backgroundColor = '#999999'; this.style.backgroundColor='#ffffff';"
+            onchange="this.style.backgroundColor = '#ffffff'; this.style.backgroundColor='red';"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>Enter Number 2</td>
+        <td><input type="text" id="num2" /></td>
+      </tr>
+      <tr>
+        <td colspan="2"><hr /></td>
+      </tr>
+      <tr>
+        <td>Result:</td>
+        <td><input type="text" id="ss" /></td>
+      </tr>
+      <tr>
+        <td>
+          <select id="ops">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+          </select>
+        </td>
+        <td align="center">
+          <input
+            type="button"
+            value="Calculate"
+            onclick="
+          var n1, n2, s;
+          n1= parseFloat(document.getElementById('num1').value);
+          n2= parseFloat(document.getElementById('num2').value);
+
+          const opt = document.getElementById('ops').value;
+          if(opt == '+')
+            s=n1+n2;
+          else if(opt == '-')
+            s=n1-n2;
+          else if(opt == '*')
+            s=n1*n2;
+          else if(opt == '/')
+            s=n1/n2;
+          else if(opt == '%')
+            s=n1%n2;
+        document.getElementById('ss').value = s;    
+        "
+          />
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
