@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Lab 9</title>
+  </head>
+  <body>
+    <p id="loop2"></p>
+    <script>
+      var myRGB = new Array("00", "22", "44", "66", "88", "aa", "cc", "ff");
+      var hexValue = "";
+      var tableContent = "<table width=480>";
+      var tableContent1 = '<td width="80" height="40" bgcolor="#';
+      var tableContent2 = '" align="center" valign="middle">';
+      var tableContent3 = '<input type="button" value="';
+      var tableContent4 =
+        "\" onclick=\"getElementById('art1').style.backgroundColor='#";
+      var tableContent5 = "'\"></td>";
+
+      for (red = 0; red < 8; red++) {
+        for (green = 0; green < 8; green++) {
+          tableContent += "<tr>";
+          for (blue = 0; blue < 8; blue++) {
+            hexValue = myRGB[red] + myRGB[green] + myRGB[blue];
+
+            tableContent += tableContent1 + hexValue + tableContent2;
+            tableContent += tableContent3 + hexValue + tableContent4;
+            tableContent += hexValue + tableContent5;
+          }
+          tableContent += "</tr>";
+        }
+      }
+      tableContent += "</table>";
+      console.log(tableContent);
+      document.getElementById("loop2").innerHTML = tableContent;
+      document.getElementById("loop2").innerHTML += "Hello World";
+    </script>
+  </body>
+</html>
