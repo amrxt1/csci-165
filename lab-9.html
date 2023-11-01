@@ -1,9 +1,16 @@
 <html>
   <head>
     <title>Lab 9</title>
+    <link rel="stylesheet" href="styles/lab-9.css" />
   </head>
   <body>
-    <p id="loop2"></p>
+    <div class="main">
+      <div class="heading">
+        <h1>Lab - 9</h1>
+        <h2>Color Pallete</h2>
+      </div>
+      <p id="loop2"></p>
+    </div>
     <script>
       var myRGB = new Array("00", "22", "44", "66", "88", "aa", "cc", "ff");
       var hexValue = "";
@@ -31,7 +38,6 @@
       tableContent += "</table>";
       console.log(tableContent);
       document.getElementById("loop2").innerHTML = tableContent;
-      document.getElementById("loop2").innerHTML += "Hello World";
     </script>
   </body>
 </html>
