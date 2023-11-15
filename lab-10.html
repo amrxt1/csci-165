@@ -11,7 +11,7 @@
       else if (document.getElementById("s").checked) user = 3;
 
       if (computer == 1) {
-        document.getElementById("comDisp").src = "r.png";
+        document.getElementById("comDisp").src = "images/r.png";
         if (user == 1) document.getElementById("result").innerHTML = "Tie!";
         else if (user == 2)
           document.getElementById("result").innerHTML = "You Win!";
@@ -19,7 +19,7 @@
           document.getElementById("result").innerHTML = "You Lose!";
         else document.getElementById("result").innerHTML = "Need to select!";
       } else if (computer == 2) {
-        document.getElementById("comDisp").src = "p.png";
+        document.getElementById("comDisp").src = "images/p.png";
         if (user == 1)
           document.getElementById("result").innerHTML = "You Lose!";
         else if (user == 2)
@@ -29,7 +29,7 @@
         else
           document.getElementById("result").innerHTML = "User needs to select!";
       } else if (computer == 3) {
-        document.getElementById("comDisp").src = "s.png";
+        document.getElementById("comDisp").src = "images/s.png";
         if (user == 1) document.getElementById("result").innerHTML = "You Win!";
         else if (user == 2)
           document.getElementById("result").innerHTML = "You Lose!";
@@ -42,11 +42,11 @@
 
     var ps = new Array(3);
     ps[0] = new Image();
-    ps[0].src = "r.png";
+    ps[0].src = "images/r.png";
     ps[1] = new Image();
-    ps[1].src = "p.png";
+    ps[1].src = "images/p.png";
     ps[2] = new Image();
-    ps[2].src = "s.png";
+    ps[2].src = "images/s.png";
 
     var w = 0;
     var cc = 0;
@@ -70,15 +70,15 @@
             type="radio"
             name="rsp"
             id="r"
-            onclick="document.getElementById('disp').src='r.png';"
+            onclick="document.getElementById('disp').src='images/r.png';"
           />Rock
         </td>
         <td rowspan="3">
-          <img src="bg.jpg" width="100" height="100" id="disp" />
+          <img src="images/bg.jpg" width="100" height="100" id="disp" />
         </td>
         <td rowspan="3">Computer's Choice</td>
         <td rowspan="3">
-          <img src="bg.jpg" width="100" height="100" id="comDisp" />
+          <img src="images/bg.jpg" width="100" height="100" id="comDisp" />
         </td>
       </tr>
       <tr>
@@ -87,7 +87,7 @@
             type="radio"
             name="rsp"
             id="p"
-            onclick="document.getElementById('disp').src='p.png';"
+            onclick="document.getElementById('disp').src='images/p.png';"
           />Paper
         </td>
       </tr>
@@ -97,7 +97,7 @@
             type="radio"
             name="rsp"
             id="s"
-            onclick="document.getElementById('disp').src='s.png';"
+            onclick="document.getElementById('disp').src='images/s.png';"
           />Scissors
         </td>
       </tr>
@@ -116,8 +116,8 @@
             onclick="var rd = document.getElementsByName('rsp');
             for (var i = 0; i < rd.length; i++)
                 rd[i].checked = false;
-            document.getElementById('disp').src = 'bg.jpg';
-            document.getElementById('comDisp').src = 'bg.jpg';
+            document.getElementById('disp').src = 'images/bg.jpg';
+            document.getElementById('comDisp').src = 'images/bg.jpg';
             document.getElementById('result').innerHTML = '';
         "
           />
