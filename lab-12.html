@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 12</title>
+    <style>
+      .box {
+        width: 250px;
+        height: 150px;
+        border: 2px solid maroon;
+        background-color: burlywood;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="box">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </div>
+        <div class="box"></div>
+      </div>
+    </div>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+
+    <script>
+      console.log("Ancestor Traversing:");
+      $(document).ready(function () {
+        var ancestors = $("ul").parents();
+        ancestors.addClass("highlight");
+        console.log(ancestors);
+      });
+
+      $(document).ready(function () {
+        console.log("Descendant Traversing:");
+        var descendants = $(".box ul").find("li");
+
+        descendants.addClass("highlight");
+        console.log(descendants);
+      });
+
+      $(document).ready(function () {
+        console.log("Siblings Traversing:");
+        var siblings = $(".box").siblings();
+        siblings.addClass("highlight");
+        console.log(siblings);
+      });
+    </script>
+  </body>
+</html>
