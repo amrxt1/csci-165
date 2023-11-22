@@ -11,6 +11,11 @@
         border: 2px solid maroon;
         background-color: burlywood;
       }
+
+      .ulist {
+        border: 2px solid black;
+        background-color: gray;
+      }
     </style>
   </head>
   <body>
@@ -49,6 +54,18 @@
         var siblings = $(".box").siblings();
         siblings.addClass("highlight");
         console.log(siblings);
+      });
+      //HTML Methods
+      $(document).ready(function () {
+        $(".box ul").addClass("ulist");
+      });
+
+      $(document).ready(function () {
+        console.log($(".box ul").attr("class"));
+      });
+
+      $(document).ready(function () {
+        $(".box:last").after("<p>This content is inserted using after().</p>");
       });
     </script>
   </body>
