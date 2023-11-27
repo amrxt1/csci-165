@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSCI165: Final Project</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="index.css" />
+
+    <script src="scripts/jquery.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="title">Linux for Beginners</div>
+      <div class="nav">
+        <a href="project.html"> Home </a>
+        <a href="getting-started.html"> Getting Started </a>
+        <a href="summary.html"> Summary </a>
+      </div>
+    </header>
+    <div class="main">
+      <p>
+        <span class="bold-big">Linux</span> is a family of free and open-source
+        operating systems based on the Linux kernel. Operating systems based on
+        Linux are known as Linux distributions or distros. Examples include
+        Debian, Ubuntu, Fedora, CentOS, Gentoo, Arch Linux, and many others.
+        <br />
+        <button id="start">Animate Image with jQuery</button><br />
+        <img
+          src="images/distros.jpg"
+          alt="linux-distros"
+          style="width: 400px"
+        />
+        <br />
+        The Linux kernel has been under active development since 1991, and has
+        proven to be extremely versatile and adaptable. You can find computers
+        that run Linux in a wide variety of contexts all over the world, from
+        web servers to cell phones. Today, 90% of all cloud infrastructure and
+        74% of the world’s smartphones are powered by Linux.
+        <br />
+      </p>
+
+      <div class="bold-big">The Terminal</div>
+      <p>
+        The terms “terminal,” “shell,” and “command line interface” are often
+        used interchangeably, but there are subtle differences between them:
+      </p>
+      Click <button id="list">here</button> to collapse list using jQuery <br />
+      <ul id="list-dot">
+        <li>
+          A terminal is an input and output environment that presents a
+          text-only window running a shell.
+        </li>
+        <li>
+          A shell is a program that exposes the computer’s operating system to a
+          user or program. In Linux systems, the shell presented in a terminal
+          is a command line interpreter.
+        </li>
+        <li>
+          A command line interface is a user interface (managed by a command
+          line interpreter program) which processes commands to a computer
+          program and outputs the results.
+        </li>
+      </ul>
+      <br />
+      <div class="bold-big">Security of Linux</div>
+      <ul id="security">
+        <li>
+          <span class="list-heading">User Permissions</span><br />
+          When you install Windows, it will create an administrator account and
+          give you full access to do basically whatever you want with the
+          operating system using the magical “Run as administrator” option.
+          Linux, on the other hand, doesn’t allow such permissions by default,
+          it will allow you to use your home directory freely, but whenever you
+          want to do a system-level operation you need to provide the root
+          password.
+        </li>
+        <li>
+          <span class="list-heading">Software installation </span><br />
+          To install software on Windows, users generally go to the internet,
+          search for an EXE or MSI file, download it and install it. This is a
+          huge security risk since you never know if this source can be trusted
+          or not. Linux on the other hand uses something called package
+          managers. To put it simply, a package manager is responsible for
+          downloading the programs you need from trusty sources called
+          repositories. Repositories are usually managed by the community, and
+          packages take a long process to get verified and accepted. They also
+          make things easier for the user, since there is no search on the
+          internet nor any lookup for download files, all you have to do is
+          enter a simple command.
+        </li>
+        <li>
+          <span class="list-heading">Open Source </span><br />
+          Linux is an open-source operating system, which means that the source
+          code for it is available for anyone to see and modify, you can even
+          create your personal Linux distribution and commercialize it if you
+          want and nobody will stop you. At first, you might think that this is
+          a security risk since bad people can look at the code. But the
+          benefits outweigh the risks in this case. Since even more, developers
+          and researchers all over the world find bugs and exploits and send
+          patches almost every day to the Linux source code, which makes it
+          safer and more secure over time. In contrast, Windows is proprietary
+          software owned by Microsoft, and no matter how many talented
+          developers Microsoft hires, finding exploits will never be as fast as
+          in Linux since there is a big community behind it.
+        </li>
+      </ul>
+    </div>
+    <script src="index.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+#security{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#list-dot{
+    list-style-type: disc;
+    padding: 0px 9%;
+}
+
+#img-text{
+    animation: coloranimation 2s alternate infinite;
+    text-align: center;
+}
+
+@keyframes coloranimation{
+    0%{
+        color: #1D3557;
+    }
+    100%{
+        color: #E63946;
+    }
+}
